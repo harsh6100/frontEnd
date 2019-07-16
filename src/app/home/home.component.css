@@ -1,0 +1,14 @@
+body {
+    background-image: url(C:\Users\kumar.harsh\final-project\src\app\images\Blog.jpg);
+    height: 100vh;
+  }
+.jumbotron {
+    background: none;  
+    padding-top: 100px;
+}
+.btn{
+    margin-right:16px;
+}
+.hd1{
+    color: darkgray
+}

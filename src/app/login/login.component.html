@@ -1,0 +1,37 @@
+
+<body>
+    <div id="login">
+   
+    <div class="container">
+        <div id="row" class="row justify-content-center align-items-center">
+            <div id="column" class="col-md-6">
+                <div class="box col-md-12">
+                        <h3 class="text-center text-info">Login</h3>
+                        <form >               
+                    
+                                <div class="form-group ">
+                                        <label for="user">Username</label>
+                                        <input type="text"  id="user" name="user" class="form-control" [(ngModel)]="user1.user"  />
+                                       
+                                    </div>
+                                  
+                                            <div class="form-group">
+                                                <label for="passwd">Password</label>
+                                                <input type="password" id="passwd" name="passwd" class="form-control" [(ngModel)]="user1.passwd" />
+                                              
+                                            </div>
+                                <div class="form-group">
+                            <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                            <button class="btn btn-success" (click)="checkLogin()">Login</button>
+                        </div>
+                        <div id="register-link" class="text-right">
+                            <a routerLink="/signup" class="text-info">Register here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+

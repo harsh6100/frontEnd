@@ -1,0 +1,19 @@
+body {
+    background-image: url(C:\Users\kumar.harsh\final-project\src\app\images\start.jpg);
+    height: 100vh;
+  }
+   .box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 335px;
+    border: 1px solid #9C9C9C;
+    background-image: none;
+    opacity: 0.9;
+  }
+  
+   #register-link {
+    margin-top: -85px;
+  }
+  .text-info{
+    color: black;
+  }

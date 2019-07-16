@@ -1,0 +1,21 @@
+body {
+    background-image: url(C:\Users\kumar.harsh\final-project\src\app\images\asdfsafsf.jpg);
+    height: 100vh;
+  }
+   .box {
+    margin-top: 50px;
+    max-width: 600px;
+    height: 555px;
+    border: 1px solid #9C9C9C;
+    background-image: none;
+    opacity: 0.9;
+  
+  }
+  
+   #register-link {
+    margin-top: -85px;
+  }
+  .form-group{
+    color: black;
+  }
+  
