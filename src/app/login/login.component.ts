@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
 
   registerForm: FormGroup;
   submitted = false;
+  msg:string=""
 
  
   user1: Login= new Login("","");
@@ -40,13 +41,18 @@ export class LoginComponent implements OnInit {
     
     (this.loginservice.login(this.user1).subscribe(   
           data => {
-          this.router.navigate(['/header']);                     
-           
+            if(data)
+            {
+              
+          this.router.navigate(['/dashboard']);                     
+            }
+            else{
+              this.msg="Invalid Username and Password";
+              }
        },
-      error => {
-          alert('failed')
+     
 
-       }      
+          
       )
      );
        }

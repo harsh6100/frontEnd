@@ -20,6 +20,7 @@
                                                 <input type="password" id="passwd" name="passwd" class="form-control" [(ngModel)]="user1.passwd" />
                                               
                                             </div>
+                                            <b style="color: red">{{msg}}</b>
                                 <div class="form-group">
                             <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                             <button class="btn btn-success" (click)="checkLogin()">Login</button>
@@ -33,5 +34,6 @@
         </div>
     </div>
 </div>
+
 </body>
 

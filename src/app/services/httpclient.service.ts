@@ -30,12 +30,19 @@ export class HttpclientService {
   public createEmployee(User) {
     
   
-    return this.httpClient.post<User>("http://localhost:8095/employees", User);
+    return this.httpClient.post<User>("http://localhost:8095/employees", User).pipe(
+      map(
+        userData => {
+                
+                 return userData;
+        }
+      )
+    );
   }
  
   public login(Login) { 
     
-    alert(JSON.stringify(Login))
+    
     return this.httpClient.post<Login>("http://localhost:8095/employees/logincheck", Login)
   }
 }

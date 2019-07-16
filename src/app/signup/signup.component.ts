@@ -5,13 +5,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
+  msg:string;
   user1: User= new User("","","","","");
   constructor(private httpclientService:HttpclientService,private formBuilder: FormBuilder,private router:Router) { }
 
@@ -21,10 +22,16 @@ export class SignupComponent implements OnInit {
 
   Sign()
   {
-    alert('asfsaf')
+    
     this.httpclientService.createEmployee(this.user1)
         .subscribe(data=>{
-          this.router.navigate(['/login']);      
+         if(data){
+          this.router.navigate(['/login']);
+          alert("User Created")
+        }      
+        else {
+          this.msg="Username Already Exists";
+        }
         });
   }
 

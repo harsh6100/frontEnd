@@ -23,11 +23,13 @@ export class AuthenticationService {
 
     public login(Login) { 
     
-      alert(JSON.stringify(Login))
+    
       return this.httpClient.post<Login>("http://localhost:8095/employees/logincheck", Login).pipe(
        map(
          userData => {    
-          sessionStorage.setItem('username',Login.user);       
+           if(userData){
+          sessionStorage.setItem('username',Login.user);
+           }       
           return userData;          
          
           
@@ -39,7 +41,7 @@ export class AuthenticationService {
     
     isUserLoggedIn() {
       let user = sessionStorage.getItem('username')
-      console.log(!(user === null))
+      
       return !(user === null)
     }
   

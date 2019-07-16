@@ -6,7 +6,7 @@
             <div id="row" class="row justify-content-center align-items-center">
                 <div id="column" class="col-md-6">
                     <div class="box col-md-12">
-                            <h3 class="text-center text-info">Login</h3>
+                            <h3 class="text-center text-info">Sign Up</h3>
                             <form>               
                         
                                     <div class="form-group ">
@@ -38,6 +38,7 @@
                                                                 <input type="text" name="pass"  class="form-control"[(ngModel)]="user1.pass"  />
                                                                
                                                             </div>
+                                                            <b style="color: red">{{msg}}</b>
                                     <div class="form-group">                               
                                         <button class="btn btn-success" (click)="Sign()">Create</button>
                             </div>

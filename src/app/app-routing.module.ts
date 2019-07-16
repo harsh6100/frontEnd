@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'signup', component: SignupComponent},
-  {path:'header',component: HeaderComponent,canActivate:[AuthGaurdService]},
+  {path:'dashboard',component: HeaderComponent,canActivate:[AuthGaurdService]},
   {path:'',component:HomeComponent},
   {path:'logout',component:LogoutComponent}
 ];
