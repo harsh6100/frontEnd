@@ -1,5 +1,5 @@
 body {
-    background-image: url(C:\Users\kumar.harsh\final-project\src\app\images\Blog.jpg);
+    background-image: url('../images/Blog.jpg');
     height: 100vh;
   }
 .jumbotron {

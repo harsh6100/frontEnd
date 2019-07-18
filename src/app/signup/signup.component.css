@@ -1,11 +1,11 @@
 body {
-    background-image: url(C:\Users\kumar.harsh\final-project\src\app\images\asdfsafsf.jpg);
-    height: 100vh;
+    background-image: url('../images/asdfsafsf.jpg');
+    height: 110vh;
   }
    .box {
     margin-top: 50px;
     max-width: 600px;
-    height: 580px;
+    height: 670px;
     border: 1px solid #9C9C9C;
     background-image: none;
     opacity: 0.9;

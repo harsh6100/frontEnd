@@ -1,5 +1,5 @@
 body {
-    background-image: url(C:\Users\kumar.harsh\final-project\src\app\images\start.jpg);
+    background-image: url('../images/start.jpg');
     height: 100vh;
   }
    .box {
